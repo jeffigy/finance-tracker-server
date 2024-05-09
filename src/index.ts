@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
   return res.json({ message: "hello world" });
 });
 
-app.use("/financial-record", FinancialRecordRoutes);
+app.use("/financial-records", FinancialRecordRoutes);
 
 const mongoURI: string | undefined = process.env.MONGODB_URI;
 
